@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "category": "Frontend",
+    "description": "Librería para construir interfaces a partir de componentes reutilizables. Es la base de este TP2.",
+    "usadoPor": ["ivan", "angel"],
+    "link": "https://react.dev"
+  },
+  {
+    "id": 2,
+    "name": "React Router",
+    "category": "Frontend",
+    "description": "Maneja la navegación entre las secciones de la app (sidebar, perfiles, rutas con parámetros) sin recargar la página.",
+    "usadoPor": ["ivan"],
+    "link": "https://reactrouter.com"
+  },
+  {
+    "id": 3,
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "Framework sobre React con renderizado del lado del servidor y generación estática.",
+    "usadoPor": ["ivan", "angel"],
+    "link": "https://nextjs.org"
+  },
+  {
+    "id": 4,
+    "name": "Astro",
+    "category": "Frontend",
+    "description": "Framework orientado a sitios de contenido, con islas de interactividad.",
+    "usadoPor": ["angel"],
+    "link": "https://astro.build"
+  },
+  {
+    "id": 5,
+    "name": "Svelte",
+    "category": "Frontend",
+    "description": "Framework que compila los componentes a JavaScript vanilla en tiempo de build.",
+    "usadoPor": ["angel"],
+    "link": "https://svelte.dev"
+  },
+  {
+    "id": 6,
+    "name": "TypeScript",
+    "category": "Frontend",
+    "description": "Superset de JavaScript con tipado estático, usado en varios de los proyectos del equipo.",
+    "usadoPor": ["ivan"],
+    "link": "https://www.typescriptlang.org"
+  },
+  {
+    "id": 7,
+    "name": "Vite",
+    "category": "Herramientas",
+    "description": "Herramienta de build para proyectos frontend, usada para levantar esta app React.",
+    "usadoPor": ["ivan"],
+    "link": "https://vite.dev"
+  },
+  {
+    "id": 8,
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "Entorno de ejecución de JavaScript del lado del servidor, base del stack MERN del equipo.",
+    "usadoPor": ["ivan", "angel"],
+    "link": "https://nodejs.org"
+  },
+  {
+    "id": 9,
+    "name": "Express",
+    "category": "Backend",
+    "description": "Framework minimalista para construir APIs y servidores con Node.js.",
+    "usadoPor": ["ivan"],
+    "link": "https://expressjs.com"
+  },
+  {
+    "id": 10,
+    "name": "NestJS",
+    "category": "Backend",
+    "description": "Framework de Node.js con arquitectura modular inspirada en Angular, para APIs más grandes.",
+    "usadoPor": ["ivan"],
+    "link": "https://nestjs.com"
+  },
+  {
+    "id": 11,
+    "name": "C#",
+    "category": "Backend",
+    "description": "Lenguaje de Microsoft usado por el equipo en proyectos .NET y en testing/automatización.",
+    "usadoPor": ["flavio"],
+    "link": "https://learn.microsoft.com/dotnet/csharp"
+  },
+  {
+    "id": 12,
+    "name": "Python",
+    "category": "Backend",
+    "description": "Lenguaje usado para scripting, automatización de pruebas y análisis de datos.",
+    "usadoPor": ["flavio"],
+    "link": "https://www.python.org"
+  },
+  {
+    "id": 13,
+    "name": "MongoDB",
+    "category": "Base de datos",
+    "description": "Base de datos NoSQL orientada a documentos, parte del stack MERN.",
+    "usadoPor": ["ivan"],
+    "link": "https://www.mongodb.com"
+  },
+  {
+    "id": 14,
+    "name": "PostgreSQL",
+    "category": "Base de datos",
+    "description": "Base de datos relacional open source, usada en proyectos con NestJS/Next.js.",
+    "usadoPor": ["ivan"],
+    "link": "https://www.postgresql.org"
+  },
+  {
+    "id": 15,
+    "name": "SQL",
+    "category": "Base de datos",
+    "description": "Lenguaje de consulta estructurado, base de las bases de datos relacionales del equipo.",
+    "usadoPor": ["ivan", "flavio"],
+    "link": "https://en.wikipedia.org/wiki/SQL"
+  },
+  {
+    "id": 16,
+    "name": "Docker",
+    "category": "Herramientas",
+    "description": "Empaqueta aplicaciones en contenedores para que corran igual en cualquier entorno.",
+    "usadoPor": [],
+    "link": "https://www.docker.com"
+  },
+  {
+    "id": 17,
+    "name": "Kubernetes",
+    "category": "Herramientas",
+    "description": "Orquesta contenedores Docker en producción (despliegue, escalado, recuperación ante fallas).",
+    "usadoPor": [],
+    "link": "https://kubernetes.io"
+  },
+  {
+    "id": 18,
+    "name": "Git",
+    "category": "Herramientas",
+    "description": "Sistema de control de versiones distribuido que usa todo el equipo para trabajar en paralelo.",
+    "usadoPor": ["ivan", "angel", "flavio", "marcelo"],
+    "link": "https://git-scm.com"
+  },
+  {
+    "id": 19,
+    "name": "GitHub",
+    "category": "Herramientas",
+    "description": "Hospeda los repositorios del equipo y es la fuente de los datos que se muestran en la sección API.",
+    "usadoPor": ["ivan", "angel", "flavio", "marcelo"],
+    "link": "https://github.com"
+  },
+  {
+    "id": 20,
+    "name": "Figma",
+    "category": "Herramientas",
+    "description": "Herramienta de diseño de interfaces usada para explorar la identidad visual del equipo.",
+    "usadoPor": [],
+    "link": "https://www.figma.com"
+  },
+  {
+    "id": 21,
+    "name": "Postman",
+    "category": "Testing",
+    "description": "Cliente para probar endpoints de API manualmente durante el desarrollo backend.",
+    "usadoPor": ["ivan"],
+    "link": "https://www.postman.com"
+  },
+  {
+    "id": 22,
+    "name": "Jest",
+    "category": "Testing",
+    "description": "Framework de testing para JavaScript/TypeScript, usado en pruebas automatizadas.",
+    "usadoPor": ["flavio"],
+    "link": "https://jestjs.io"
+  },
+  {
+    "id": 23,
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "description": "Framework de utilidades CSS para construir interfaces sin salir del HTML/JSX.",
+    "usadoPor": [],
+    "link": "https://tailwindcss.com"
+  },
+  {
+    "id": 24,
+    "name": "Kotlin",
+    "category": "Backend",
+    "description": "Lenguaje usado para desarrollo Android, parte del stack del equipo fuera de la web.",
+    "usadoPor": ["ivan"],
+    "link": "https://kotlinlang.org"
+  },
+  {
+    "id": 25,
+    "name": "VS Code",
+    "category": "Herramientas",
+    "description": "Editor de código principal del equipo, con extensiones para React, ESLint y control de versiones.",
+    "usadoPor": ["ivan", "angel", "flavio", "marcelo"],
+    "link": "https://code.visualstudio.com"
+  }
+]
