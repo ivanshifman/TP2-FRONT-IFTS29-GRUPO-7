@@ -9,8 +9,8 @@ Router), con una sidebar compartida, datos locales con búsqueda/filtro,
 consumo de una API pública y un árbol de renderizado de los componentes
 reales del proyecto.
 
-🔗 **Sitio publicado (Vercel):** `<completar con la URL real>`
-🔗 **Repositorio:** `<completar con la URL de este repositorio>`
+🔗 **Sitio publicado (Vercel):** [Ver proyecto](https://tp-2-front-ifts-29-grupo-7.vercel.app/)
+🔗 **Repositorio:** [Repositorio](https://github.com/ivanshifman/TP2-FRONT-IFTS29-GRUPO-7)
 
 ---
 
