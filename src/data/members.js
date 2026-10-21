@@ -20,7 +20,7 @@ export const MEMBERS = {
     name: "Ángel Sabato",
     role: "Full Stack",
     city: "Ciudad Autónoma de Buenos Aires",
-    age: "36 años",
+    age: "37 años",
     githubUser: "SabatoCom24212",
     avatarFile: "avatar-angel.webp",
     interaction: "tabs",
