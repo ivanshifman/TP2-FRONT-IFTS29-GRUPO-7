@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { MEMBERS, MEMBER_IDS } from "../data/members.js";
 import MemberCard from "../components/MemberCard.jsx";
+import SplitFlapText from "../components/SplitFlapText.jsx";
+import TextType from "../components/TextType.jsx";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -19,7 +21,20 @@ export default function Home() {
     <>
       <section className="hero">
         <p className="eyebrow">&gt; whoami --team</p>
-        <h1>DevSquad</h1>
+        <h1>
+          <SplitFlapText
+            text="DevSquad"
+            fontSize="clamp(1.5rem, 4vw + 1rem, 3.2rem)"
+            textColor="var(--text)"
+            gap={2}
+            padTo={8}
+            align="center"
+            order="center"
+            tileStyle="minimal"
+            flipsPerChar={8}
+            intro
+          />
+        </h1>
         <p>
           Somos un equipo de 4 estudiantes de la Tecnicatura Superior en
           Desarrollo de Software (IFTS N°29). Este proyecto es el TP2 de
@@ -33,9 +48,19 @@ export default function Home() {
       </section>
 
       <section id="equipo" className="team-section" aria-labelledby="team-title">
-        <h2 id="team-title" className="section-title" style={{ textAlign: "center" }}>
-          El equipo
-        </h2>
+        <TextType
+          id="team-title"
+          as="h2"
+          className="section-title"
+          style={{ textAlign: "center" }}
+          text="El equipo"
+          typingSpeed={65}
+          initialDelay={100}
+          typeEffect="fade"
+          loop={false}
+          showCursor={false}
+          startOnVisible
+        />
         <p
           className="section-desc"
           style={{ marginLeft: "auto", marginRight: "auto", textAlign: "center" }}

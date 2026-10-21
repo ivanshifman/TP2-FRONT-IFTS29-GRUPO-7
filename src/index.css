@@ -709,7 +709,13 @@ select:focus-visible {
   margin-bottom: 32px;
 }
 
+.filters-bar > .search-bar {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
 .filter-select {
+  max-width: 100%;
   font-family: var(--font-body);
   font-size: 0.9rem;
   padding: 11px 14px;
@@ -871,6 +877,7 @@ select:focus-visible {
   display: flex;
   align-items: baseline;
   gap: 10px;
+  min-width: 0;
 }
 .tree-toggle {
   flex-shrink: 0;
@@ -894,10 +901,12 @@ select:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.92rem;
   color: var(--text);
+  overflow-wrap: anywhere;
 }
 .tree-note {
   font-size: 0.8rem;
   color: var(--text-soft);
+  overflow-wrap: anywhere;
 }
 
 /* =========================================================
@@ -917,6 +926,7 @@ select:focus-visible {
 .log-entry-details summary {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 14px;
   padding: 16px 0;
   cursor: pointer;
@@ -941,6 +951,7 @@ select:focus-visible {
   white-space: nowrap;
 }
 .log-entry-title {
+  flex: 1 1 240px;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -970,11 +981,16 @@ select:focus-visible {
 
 /* Hasta 900px: la sidebar pasa a panel deslizable + aparece la topbar */
 @media (max-width: 900px) {
+  .app-shell {
+    display: block;
+  }
+
   .topbar {
     display: flex;
   }
 
   .sidebar {
+    width: min(var(--sidebar-width), calc(100vw - 48px));
     position: fixed;
     top: 0;
     left: 0;
@@ -1002,7 +1018,13 @@ select:focus-visible {
   .member-grid,
   .resource-grid,
   .api-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  }
+
+  .resource-card,
+  .api-card,
+  .member-preview {
+    min-width: 0;
   }
 }
 
@@ -1013,6 +1035,9 @@ select:focus-visible {
   }
   .page-section {
     padding: 32px 16px 16px;
+  }
+  .team-section {
+    padding: 24px 16px 56px;
   }
   .member-grid,
   .resource-grid,
@@ -1032,5 +1057,20 @@ select:focus-visible {
   .filters-bar {
     flex-direction: column;
     align-items: stretch;
+  }
+  .filters-bar > .search-bar,
+  .filter-select,
+  .filters-bar > .btn {
+    width: 100%;
+  }
+  .resource-card-top {
+    flex-wrap: wrap;
+  }
+  .log-entry-details {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .tree-wrapper {
+    padding: 16px;
   }
 }

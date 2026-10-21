@@ -42,11 +42,11 @@ repositorio del grupo. Puntos centrales que pide la consigna:
 ## 👥 Integrantes
 
 | Nombre | Perfil de GitHub |
-|---|---|
-| Iván Shifman | https://github.com/ivanshifman |
-| Ángel Sabato | https://github.com/SabatoCom24212 |
-| Flavio Rinaldi | https://github.com/flaviorin |
-| Marcelo Zárate | https://github.com/mmandrakes |
+| --- | --- |
+| Iván Shifman | <https://github.com/ivanshifman> |
+| Ángel Sabato | <https://github.com/SabatoCom24212> |
+| Flavio Rinaldi | <https://github.com/flaviorin> |
+| Marcelo Zárate | <https://github.com/mmandrakes> |
 
 ---
 
@@ -74,41 +74,54 @@ npm run preview
 
 ## 📁 Estructura del proyecto
 
-```
+```text
 tp2-react/
-├── index.html
+├── .gitignore
+├── .oxlintrc.json
+├── index.html               # documento HTML de entrada
+├── package.json             # dependencias y scripts
+├── package-lock.json
 ├── vercel.json              # rewrites para que React Router funcione en producción
+├── vite.config.js
 ├── public/
-│   └── img/                 # avatares de cada integrante
+│   └── img/
+│       ├── avatar-angel.webp
+│       ├── avatar-flavio.webp
+│       ├── avatar-ivan.webp
+│       └── avatar-marcelo.webp
 ├── src/
-│   ├── main.jsx              # monta <App/> dentro de <BrowserRouter>
+│   ├── main.jsx               # monta <App/> dentro de <BrowserRouter>
 │   ├── App.jsx                # define las rutas sobre <Layout/>
 │   ├── index.css              # hoja de estilos global única
 │   ├── data/
-│   │   ├── members.js          # datos reales de los 4 integrantes (fuente única)
-│   │   ├── logEntries.js       # entradas de la bitácora (TP1 + TP2)
-│   │   ├── resources.json      # 20+ registros de stack/herramientas del equipo
-│   │   └── componentTree.js    # jerarquía real de componentes, para /arbol
+│   │   ├── members.js         # datos reales de los 4 integrantes (fuente única)
+│   │   ├── logEntries.js      # entradas de la bitácora (TP1 + TP2)
+│   │   ├── resources.json     # registros de stack/herramientas del equipo
+│   │   └── componentTree.js   # jerarquía real de componentes, para /arbol
 │   ├── components/
-│   │   ├── Layout.jsx           # topbar mobile + Sidebar + <Outlet/>
-│   │   ├── Sidebar.jsx          # navegación compartida, sección activa
-│   │   ├── MemberCard.jsx       # tarjeta de integrante (reutilizada con props)
-│   │   ├── DevCard.jsx          # tarjeta de perfil + elige la interacción
-│   │   ├── Chips.jsx            # lista de chips reutilizable
-│   │   ├── FlipCard.jsx         # interacción propia de Iván
-│   │   ├── Tabs.jsx             # interacción propia de Ángel
-│   │   ├── Accordion.jsx        # interacción propia de Flavio
-│   │   ├── SkillBars.jsx        # interacción propia de Marcelo
-│   │   ├── LoadingState.jsx     # estado de carga reutilizable
-│   │   ├── ErrorState.jsx       # estado de error reutilizable (con reintentar)
-│   │   └── RenderTree.jsx       # árbol de componentes recursivo, expandible
+│   │   ├── Layout.jsx          # topbar mobile + Sidebar + <Outlet/>
+│   │   ├── Sidebar.jsx         # navegación compartida, sección activa
+│   │   ├── MemberCard.jsx      # tarjeta de integrante (reutilizada con props)
+│   │   ├── DevCard.jsx         # tarjeta de perfil + elige la interacción
+│   │   ├── Chips.jsx           # lista de chips reutilizable
+│   │   ├── FlipCard.jsx        # interacción propia de Iván
+│   │   ├── Tabs.jsx            # interacción propia de Ángel
+│   │   ├── Accordion.jsx       # interacción propia de Flavio
+│   │   ├── SkillBars.jsx       # interacción propia de Marcelo
+│   │   ├── LoadingState.jsx    # estado de carga reutilizable
+│   │   ├── ErrorState.jsx      # estado de error reutilizable (con reintentar)
+│   │   ├── RenderTree.jsx      # árbol de componentes recursivo, expandible
+│   │   ├── SplitFlapText.jsx   # efecto de texto de panel mecánico
+│   │   ├── SplitFlapText.css
+│   │   ├── TextType.jsx        # efecto de texto que se escribe
+│   │   └── TextType.css
 │   └── pages/
-│       ├── Home.jsx             # portada
-│       ├── ProfilePage.jsx      # ruta /perfil/:id
-│       ├── Resources.jsx        # ruta /recursos
-│       ├── ApiPage.jsx          # ruta /api
-│       ├── RenderTreePage.jsx   # ruta /arbol
-│       └── LogPage.jsx          # ruta /bitacora
+│       ├── Home.jsx            # portada y sección del equipo
+│       ├── ProfilePage.jsx     # ruta /perfil/:id
+│       ├── Resources.jsx       # ruta /recursos
+│       ├── ApiPage.jsx         # ruta /api
+│       ├── RenderTreePage.jsx  # ruta /arbol
+│       └── LogPage.jsx         # ruta /bitacora
 ```
 
 Los datos (integrantes, bitácora, recursos, árbol de componentes) viven
@@ -186,13 +199,14 @@ entradas del proceso de TP2. Cada entrada se renderiza como un
 **Por integrante:**
 
 | Integrante | Aplicación | Modelo | Para qué lo usó |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Iván | Claude, interfaz de chat | `<completar>` | Migración completa de TP1 a React (estructura de rutas, componentes, sidebar, sección de API, JSON local, árbol de renderizado) y redacción de este README |
-| Ángel | `<completar>` | `<completar>` | `<completar>` |
+| Ángel | Copilot dentro de Visual Studio Code | GPT-6-LUNA | Corrección del diseño adaptativo del sitio, agregado de componentes de React Bits y corrección del README de acuerdo a las sugerencias de la extensión de Markdown |
 | Flavio | `<completar>` | `<completar>` | `<completar>` |
 | Marcelo | `<completar>` | `<completar>` | `<completar>` |
 
 **Qué revisamos, cambiamos o adaptamos con criterio propio:**
+
 - Verificamos que cada interacción de perfil (flip card, tabs, acordeón,
   barras animadas) migrara con el mismo comportamiento que tenía en TP1,
   ahora manejada con estado de React en vez de clases CSS togglear a mano.
