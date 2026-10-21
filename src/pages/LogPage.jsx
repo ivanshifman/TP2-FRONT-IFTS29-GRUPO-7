@@ -1,10 +1,21 @@
 import { LOG_ENTRIES } from "../data/logEntries.js";
+import TextType from "../components/TextType.jsx";
 
 export default function LogPage() {
   return (
     <section className="page-section log-section-react">
       <p className="eyebrow">&gt; log --history</p>
-      <h1 className="section-title">Bitácora</h1>
+      <TextType
+        as="h1"
+        className="section-title"
+        text="Bitácora"
+        typingSpeed={65}
+        initialDelay={100}
+        typeEffect="fade"
+        loop={false}
+        showCursor={false}
+        startOnVisible
+      />
       <p className="section-desc">
         Registro de las decisiones, avances y dificultades del equipo a lo
         largo de TP1 y TP2. Se actualiza a medida que avanzamos.
