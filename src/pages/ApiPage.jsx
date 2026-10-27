@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { MEMBERS, MEMBER_IDS } from "../data/members.js";
 import LoadingState from "../components/LoadingState.jsx";
 import ErrorState from "../components/ErrorState.jsx";
+import TextType from "../components/TextType.jsx";
 
 // Pide a la API pública de GitHub (api.github.com/users/:usuario) el
 // perfil real de cada integrante. No requiere API key para uso básico
@@ -83,7 +84,17 @@ export default function ApiPage() {
   return (
     <section className="page-section">
       <p className="eyebrow">&gt; fetch --api github</p>
-      <h1 className="section-title">Perfiles reales de GitHub</h1>
+      <TextType
+        as="h1"
+        className="section-title"
+        text="Perfiles reales de GitHub"
+        typingSpeed={65}
+        initialDelay={100}
+        typeEffect="fade"
+        loop={false}
+        showCursor={false}
+        startOnVisible
+      />
       <p className="section-desc">
         Esta sección consume la <strong>API pública de GitHub</strong> (
         <code>api.github.com/users/:usuario</code>) para traer, en vivo, los

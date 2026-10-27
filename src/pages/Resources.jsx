@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import resources from "../data/resources.json";
 import { MEMBERS } from "../data/members.js";
+import TextType from "../components/TextType.jsx";
 
 const CATEGORIES = ["Todas", ...new Set(resources.map((r) => r.category))];
 
@@ -28,7 +29,17 @@ export default function Resources() {
   return (
     <section className="page-section">
       <p className="eyebrow">&gt; recursos --list</p>
-      <h1 className="section-title">Recursos del equipo</h1>
+      <TextType
+        as="h1"
+        className="section-title"
+        text="Recursos del equipo"
+        typingSpeed={65}
+        initialDelay={100}
+        typeEffect="fade"
+        loop={false}
+        showCursor={false}
+        startOnVisible
+      />
       <p className="section-desc">
         Stack y herramientas que usamos en los proyectos de DevSquad ({resources.length}{" "}
         registros). Buscá por nombre o descripción, o filtrá por categoría.
