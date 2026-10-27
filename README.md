@@ -187,7 +187,7 @@ entradas del proceso de TP2. Cada entrada se renderiza como un
 
 | Integrante | Aplicación | Modelo | Para qué lo usó |
 |---|---|---|---|
-| Iván | Claude, interfaz de chat | `<completar>` | Migración completa de TP1 a React (estructura de rutas, componentes, sidebar, sección de API, JSON local, árbol de renderizado) y redacción de este README |
+| Iván | Claude, interfaz de chat | Sonnet 5.5 | Migración completa de TP1 a React (estructura de rutas, componentes, sidebar, sección de API, JSON local, árbol de renderizado) y redacción de este README |
 | Ángel | `<completar>` | `<completar>` | `<completar>` |
 | Flavio | VS Code (GitHub Copilot / Ollama) | Copilot / qwen2.5-coder:3b | Revisión funcional y de código de los componentes migrados a React, pruebas de integración, validación de estados locales y soporte en testing de la interfaz |
 | Marcelo | `<completar>` | `<completar>` | `<completar>` |
