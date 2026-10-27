@@ -203,7 +203,7 @@ entradas del proceso de TP2. Cada entrada se renderiza como un
 | Iván | Claude, interfaz de chat | Sonnet 5.5 | Migración completa de TP1 a React (estructura de rutas, componentes, sidebar, sección de API, JSON local, árbol de renderizado) y redacción de este README |
 | Ángel | Copilot dentro de Visual Studio Code | GPT-6-LUNA | Corrección del diseño adaptativo del sitio, agregado de componentes de React Bits y corrección del README de acuerdo a las sugerencias de la extensión de Markdown |
 | Flavio | ChatGPT, interfaz web | GPT-4o | Revisión de errores en el código y sugerencias para ordenar los datos de su perfil |
-| Marcelo | Gemini, interfaz web | Gemini 2.5 | Ideas de diseño para su perfil y explicación de cómo funciona React Router |
+| Marcelo | Gemini, UX Pilot y Claude, interfaces web | Gemini 2.5, Glide y Claude Opus 4.7 | Brainstorming y pruebas de distintos diseños para mi perfil; ideas de interfaz y explicación de cómo funciona React Router |
 
 **Qué revisamos, cambiamos o adaptamos con criterio propio:**
 
