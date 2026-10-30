@@ -89,6 +89,11 @@ tp2-react/
 │       ├── avatar-flavio.webp
 │       ├── avatar-ivan.webp
 │       └── avatar-marcelo.webp
+│       └── captura-home.png
+│       └── captura-perfil_1.png
+│       └── captura-perfil_2.png
+│       └── captura-perfil_3.png
+│       └── captura-perfil_4.png
 ├── src/
 │   ├── main.jsx               # monta <App/> dentro de <BrowserRouter>
 │   ├── App.jsx                # define las rutas sobre <Layout/>
@@ -130,6 +135,16 @@ en `src/data/` como arrays u objetos; cada página los recorre con
 continúa directamente el enfoque de TP1 (`members-data.js` + `render.js`),
 ahora expresado como componentes de React en lugar de funciones que
 manipulan el DOM.
+
+---
+
+## 📸 Capturas del proyecto
+
+<img src="./public/img/captura-home.png" alt="Portada" width="600">
+<img src="./public/img/captura-perfil_1.png" alt="Perfil de Iván" width="600">
+<img src="./public/img/captura-perfil_2.png" alt="Perfil de Ángel" width="600">
+<img src="./public/img/captura-perfil_3.png" alt="Perfil de Flavio" width="600">
+<img src="./public/img/captura-perfil_4.png" alt="Perfil de Marcelo" width="600">
 
 ---
 
