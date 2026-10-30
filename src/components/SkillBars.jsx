@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function SkillBars({ skillBars, movies, albums }) {
   const [played, setPlayed] = useState(false);
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setPlayed(true));
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
   const handleClick = () => {
-    if (!played) setPlayed(true);
     setOpen((v) => !v);
   };
 

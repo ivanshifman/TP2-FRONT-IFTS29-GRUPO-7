@@ -67,8 +67,8 @@ export const MEMBERS = {
   marcelo: {
     name: "Marcelo Zárate",
     role: "Full Stack",
-    city: "Ciudad de Buenos Aires",
-    age: "OVF",
+    city: "Ciudad Autónoma de Buenos Aires",
+    age: "57 años",
     githubUser: "mmandrakes",
     avatarFile: "avatar-marcelo.webp",
     interaction: "bars",
