@@ -193,8 +193,9 @@ entradas del proceso de TP2. Cada entrada se renderiza como un
 
 ## 🤖 Declaración de uso de Inteligencia Artificial
 
-- **Herramienta usada:** Claude (Anthropic), interfaz de chat.
-- **Plan:** `<completar: gratuito o de pago, y cuál>`.
+- **Herramientas usadas:** Varias herramientas de IA generativa (Claude, ChatGPT, GitHub Copilot, Gemini, UX Pilot), utilizadas a través de sus interfaces de chat y extensiones de editor de código.
+- **Plan:** Gratuito (en su mayoría) y/o de pago.
+
 
 **Por integrante:**
 
